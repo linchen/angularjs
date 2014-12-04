@@ -24,7 +24,6 @@ angular.module("customFilters", [])
                 if (data.length < start_index) {
                     return [];
                 } else {
-                    console.log("start_index: " + data.splice(start_index));
                     return $filter("limitTo")(data.splice(start_index), size);
                 }
             } else {
